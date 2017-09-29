@@ -4,6 +4,14 @@ body {
 }
 
 h1 {
-	font-size: 6em;
-	text-shadow: -5px -5px 2px #E576;
+	font-size: 7em;
+	text-shadow: -7px -5px 8px #E82C0C;
+}
+#logForm {
+	display: block;
+	outline-style: ridge;
+	outline-width: medium;
+	padding: 10px;
+	text-align: right;
+	margin-left: all;
 }
