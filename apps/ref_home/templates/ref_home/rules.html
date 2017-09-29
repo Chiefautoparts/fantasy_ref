@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rules</title>
+</head>
+<body>
+  <a href="{% url 'main:logout' %}">Logout</a>
+  <a href="{% url 'main:home' %}">Home</a>
+	<h1>How to Play</h1>
+  <section id='rules'>
+    <p>The basics of the game are the same as any other fantasy sports game. Only here we could careless about who scores the most point runs, who wins game event, or who wins the cup trophy. There's no keeping track of how many players touch home plate during the extra point attempt or the Touchdown was made from the 3-point line. You care about the Refs and how many penalties they issue in each game.</p>
+    <p>You will draft refs from the available refs for the league onto your roster and assign them to either Active or Benched for the week. Depending on the size of each league each player will have 3, 5, or 7 refs. 5 and 7 ref leagues will have 2 or 3 refs benched each week when 3 ref leagues will bench only one.</p>
+  </section>
+	<section class="topText">
+    <ul class="head" >How it Works
+      <li id="sections">Earning Points:
+        <ul id="sectText">
+          <li>5 Yrd Penalty ---> 1 point</li>
+          <li>10 Yrd Penalty ---> 2 points</li>
+          <li>15 Yrd Penalty ---> 3 points</li>
+          <li>Half the Distance to the Goal --> 3 points</li>
+          <li>Player Get in the Face of Your Ref --> 2 points</li>
+        </ul>
+      </li>
+      <li id="sections">Point Multipliers:
+        <ul id="sectText">
+          <li>Crowd "Boo" so Loud that the Ref Cannot be Heard --> x2 points(applies to points earned on penalty called)</li>
+          <li>Head Ref for Monday Night Football --> x1.5 points (applies to total points earned from game)</li>
+          <li>Head Ref for Super Bowl --> x2 points(applies to total points earned from game)</li>
+        </ul>
+      </li>
+      <li id="sections">Loss of Points:
+        <ul id="sectText">
+          <li>Sports Commintators Make Fun of Your Ref --> -1 point</li>
+          <li>Ref Knocked Over By Player</li>
+          <li>Your Refs Call is Challenged AND Overturned --> Lose all current points for game</li>
+        </ul>
+      </li>
+    </ul>
+	</section>
+</body>
+</html>
