@@ -4,17 +4,10 @@
 	<title>Home</title>
 </head>
 <body>
-	<table>
-		<tr>
-			<th>Name</th>
-			<th>Games</th>
-		</tr>
-		{% for refs in all_refs %}
-		<tr>
-			<td>{{ refs.name }}</td>
-			<td>{{ refs.games }}</td>
-		</tr>
-		{% endfor %}
-	</table>
+	<a href="{% url 'main:refs' %}">Ref Data</a>
+	<a href="{% url 'main:rules' %}">How to Play</a>
+
+	<h1>Welcome {{user.username}}</h1>
+	<h3>Would you just look at that</h3>
 </body>
 </html>

@@ -38,4 +38,5 @@ def success(request):
 	context = {
 		'user': user
 	}
-	return render(request, 'login/home.html', context)
+	return redirect('main:home')
+
