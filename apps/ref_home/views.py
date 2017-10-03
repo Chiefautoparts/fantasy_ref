@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from .models import User
+from ..login.models import User
 
 # Create your views here.
 def index(request):
@@ -16,6 +16,7 @@ def index(request):
 
 def refs(request):
 	print '**REFS**' * 250
+	
 	return render(request, 'ref_home/refs.html')
 
 def rules(request):
