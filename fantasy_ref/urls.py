@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('apps.login.urls', namespace='login')),
-    url(r'^ref', include('apps.ref_home.urls', namespace='main'))
+    url(r'^ref', include('apps.ref_home.urls', namespace='main')),
+    url(r'^league', include('apps.leaue.urls', namespace='league'))
 ]
