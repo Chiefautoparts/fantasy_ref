@@ -26,4 +26,4 @@ def rules(request):
 def logout(request):
     request.session.flush()
     messages.success(request, 'Logged Out')
-    return reverse(redirect('login:index'))
+    return redirect('login:index')
