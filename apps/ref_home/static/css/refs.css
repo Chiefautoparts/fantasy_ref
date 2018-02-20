@@ -1,6 +1,6 @@
 html {
-	background-color: #606971;
-	color: #2F1704;
+	background: url('../img/football-field.jpg');
+	color: #000;
 }
 h1 {
 	font-size: 2em;
@@ -11,7 +11,7 @@ caption {
 }
 
 a {
-	color: #000000;
+	color: #000;
 }
 
 #ref_table {
@@ -37,6 +37,9 @@ a {
 tbody {
 	border: 5px ridge #ccc;
 	padding: 4px 5px 4px 4px;
+	background: rgba(200, 195, 194, 0.5);
+	
+	color: #000;
 }
 
 #tr {
@@ -46,7 +49,7 @@ tbody {
 
 #name {
 	border: 3px ridge #ccc;
-	color: #000000;
+	color: #000;
 }
 
 #positions {

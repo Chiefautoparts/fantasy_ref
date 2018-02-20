@@ -7,7 +7,7 @@ from ..login.models import User
 
 # Create your views here.
 def index(request):
-	print '**REF_HOME**' * 250
+	# print '**REF_HOME**' * 250
 	user = User.objects.get(id=request.session.get('id'))
 	context = {
 		'user': user
@@ -15,12 +15,12 @@ def index(request):
 	return render(request, 'ref_home/index.html', context)
 
 def refs(request):
-	print '**REFS**' * 250
+	# print '**REFS**' * 250
 	
 	return render(request, 'ref_home/refs.html')
 
 def rules(request):
-	print '**RULES**' * 250
+	# print '**RULES**' * 250
 	return render(request, 'ref_home/rules.html')
 
 def logout(request):

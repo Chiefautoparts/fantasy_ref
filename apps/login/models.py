@@ -22,7 +22,7 @@ class UserManager(models.Manager):
 			results['errors'].append('please use a real email, im not running this on Hilary Clintons server bud')
 		if not postData['password'] or len(postData['password']) < 8:
 			results['status'] = False
-			results['errors'].append('Password is weaker than a college students feels')
+			results['errors'].append('Password is weaker than a college students feelings')
 		if postData['confPassword'] != postData['password']:
 			results['status'] = False
 			results['errors'].append('Is it really too hard to make the two passwords match.........')
