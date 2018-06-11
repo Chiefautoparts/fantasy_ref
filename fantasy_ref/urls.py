@@ -20,5 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('apps.login.urls', namespace='login')),
     url(r'^ref', include('apps.ref_home.urls', namespace='main')),
-    url(r'^league', include('apps.league.urls', namespace='league'))
+    url(r'^league', include('apps.league.urls', namespace='league')),
+    url(r'^team', include('apps.team.urls', namespace='team')),
+
 ]
