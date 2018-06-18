@@ -33,7 +33,4 @@ def player_generation(num=200):
 		create_player = Player.objects.create(first_name=first_name, last_name=last_name, curr_team=team)
 
 		create_player.all_teams.add(team)
-		#poss_teams = Team.objects.filter(team__sport=team.location.team_name)
-
-		# for i in range(random.randint(0,5)):
-		# 	new_player.all_teams.add(random.choice)
+	

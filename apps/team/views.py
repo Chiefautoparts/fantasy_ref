@@ -20,4 +20,7 @@ def gen_data(request):
 
 	return redirect('team:gen')
 
-# Create your views here.
+def assignPlayers(request):
+	print "***assignPlayers***" * 25
+	
+
