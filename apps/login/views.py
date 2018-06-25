@@ -7,11 +7,11 @@ from .models import User
 
 
 def index(request):
-	print '**INDEX**' * 500
+	# print '**INDEX**' * 500
 	return render(request, 'login/index.html')
 
 def login(request):
-	print '**LOGIN**' * 500
+	# print '**LOGIN**' * 500
 	results = User.objects.loginUser(request.POST)
 	if results['status'] is False:
 		for error in results['errors']:
@@ -23,7 +23,7 @@ def login(request):
 	return redirect('login:success')
 
 def register(request):
-	print '**REGISTER**' * 500
+	# print '**REGISTER**' * 500
 	results = User.objects.authUser(request.POST)
 	if not results['status']:
 		for error in results['errors']:
@@ -33,7 +33,7 @@ def register(request):
 	return redirect('login:success')
 
 def success(request):
-	print '**SUCCESS**' * 500
+	# print '**SUCCESS**' * 500
 	user = User.objects.get(id=request.session.get('id'))
 	context = {
 		'user': user

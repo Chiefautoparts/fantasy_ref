@@ -44,7 +44,6 @@ class UserManager(models.Manager):
 										email = postData['email'],
 										password = hashpassword
 										)
-			user.save()
 			results['user'] = user
 		return results
 
@@ -53,7 +52,7 @@ class UserManager(models.Manager):
 		user = User.objects.filter(username=postData['username'])
 
 		try:
-			user
+			user[0]
 		except IndexError:
 			results['status'] = False
 			results['errors'].append('OH GOD NO ITS FAILING.... call I.T. NOW!!!!')
@@ -76,5 +75,8 @@ class User(models.Model):
 	password = models.CharField(max_length=100)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
+
+	def __str__(self):
+		return str(self.id) + ", " + self.username
 
 	objects = UserManager()
