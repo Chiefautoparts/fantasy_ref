@@ -22,5 +22,3 @@ def gen_data(request):
 
 def assignPlayers(request):
 	print "***assignPlayers***" * 25
-	
-
